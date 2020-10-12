@@ -1,0 +1,32 @@
+{
+  "title": "Accessibiity Weekly",
+  "url": "https://a11yweekly.com/",
+  "description": "A weekly dose of web accessibility to help you bring it into your everyday work.",
+  "locale": "en_US",
+  "feed": {
+    "subtitle": "Delivered to your inbox each Monday, curated by David A. Kennedy.",
+    "filename": "feed.xml",
+    "path": "/feed/",
+    "url": "https://a11yweekly.com/feed/",
+    "id": "https://a11yweekly.com/"
+  },
+  "author": {
+    "name": "David A. Kennedy",
+    "email": "me@davidakennedy.com",
+    "avatar": "/assets/img/avatar.jpg",
+    "social": {
+      "twitter": {
+        "name": "davidakennedy",
+        "url": "https://twitter.com/davidakennedy"
+      },
+      "github": {
+        "name": "davidakennedy",
+        "url": "https://github.com/davidakennedy"
+      },
+      "codepen": {
+        "name": "davidakennedy",
+        "url": "https://codepen.io/davidakennedy/"
+      }
+    }
+  }
+}

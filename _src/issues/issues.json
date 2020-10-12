@@ -1,0 +1,8 @@
+{
+  "templateClass": "issue-template",
+  "tags": [
+    "issues"
+  ],
+  "permalink": "issue/{{ page.fileSlug | slug }}/",
+  "layout": "layouts/issue.njk"
+}

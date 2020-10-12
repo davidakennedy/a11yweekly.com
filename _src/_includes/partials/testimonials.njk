@@ -1,0 +1,16 @@
+<ol class="testimonial-list auto-grid stack">
+{% for testimonial in testimonials %}
+  <li class="testimonial stack">
+    <div class="testimonial-content">
+      {{ testimonial.content }}
+    </div>
+    <div class="testimonial-details">
+      <span class="testimonial-name">
+        <a href="{{ testimonial.url }}">
+          {{ testimonial.name }},</span>
+        </a>
+      <span class="testimonial-role">{{ testimonial.role }}</span>
+    </div>
+  </li>
+{% endfor %}
+</ol>

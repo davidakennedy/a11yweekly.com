@@ -1,0 +1,13 @@
+{% extends 'layouts/base.njk' %}
+{% block content %}
+  <div class="page-header stack">
+    {% set pagetitle = title or renderData.title %}
+    <h1 class="title p-name">{{ pagetitle | markdownify }}</h1>
+  </div>
+  <div class="page-content stack">
+    {{ content | safe }}
+    {% set issuelist = pagination.items %}
+    {% include "partials/issue-list.njk" %}
+  </div>
+  {% include "partials/pagination.njk" %}
+{% endblock %}

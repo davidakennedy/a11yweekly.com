@@ -1,0 +1,888 @@
+/* Fonts */
+/* fira-sans-regular - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url('/assets/fonts/fira-sans-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('/assets/fonts/fira-sans-v10-latin-regular.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* fira-sans-italic - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Fira Sans Italic'), local('FiraSans-Italic'), url('/assets/fonts/fira-sans-v10-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('/assets/fonts/fira-sans-v10-latin-italic.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* fira-sans-700 - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url('/assets/fonts/fira-sans-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('/assets/fonts/fira-sans-v10-latin-700.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* fira-sans-700italic - latin */
+@font-face {
+  font-family: 'Fira Sans';
+  font-style: italic;
+  font-weight: 700;
+  src: local('Fira Sans Bold Italic'), local('FiraSans-BoldItalic'), url('/assets/fonts/fira-sans-v10-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+  url('/assets/fonts/fira-sans-v10-latin-700italic.woff') format('woff');
+  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* CSS Reset */
+/* https://github.com/hankchizljaw/modern-css-reset
+     v1.1.0
+     License: MIT
+     Copyright (c) 2019 Andy Bell and other contributors
+ */
+
+/* Box sizing rules */
+*, *::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core root defaults */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: var(--s4);
+}
+
+/* Inherit fonts for inputs and buttons */
+input, button, textarea, select {
+  font: inherit;
+}
+
+/* Blur images when they have no alt attribute */
+img:not([alt]) {
+  filter: blur(10px);
+}
+
+/* Remove all animations and transitions for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Variables */
+:root {
+  /* Colors */
+  --background: #f0f0f0;
+  --headline: #0c0c0c;
+  --lighttext: #3e3e3e;
+  --primary: #bb3355;
+  --secondary: #c1c1c1;
+  --text: #0c0c0c;
+  --error: #fbb;
+  --success: #d4fcbc;
+
+  /* Scale */
+  --ratio: 1.067;
+  --s-12: calc(var(--s-11) / var(--ratio));
+  --s-11: calc(var(--s-10) / var(--ratio));
+  --s-10: calc(var(--s-9) / var(--ratio));
+  --s-9: calc(var(--s-8) / var(--ratio));
+  --s-8: calc(var(--s-7) / var(--ratio));
+  --s-7: calc(var(--s-6) / var(--ratio));
+  --s-6: calc(var(--s-5) / var(--ratio));
+  --s-5: calc(var(--s-4) / var(--ratio));
+  --s-4: calc(var(--s-3) / var(--ratio));
+  --s-3: calc(var(--s-2) / var(--ratio));
+  --s-2: calc(var(--s-1) / var(--ratio));
+  --s-1: calc(var(--s0) / var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) * var(--ratio));
+  --s2: calc(var(--s1) * var(--ratio));
+  --s3: calc(var(--s2) * var(--ratio));
+  --s4: calc(var(--s3) * var(--ratio));
+  --s5: calc(var(--s4) * var(--ratio));
+  --s6: calc(var(--s5) * var(--ratio));
+  --s7: calc(var(--s6) * var(--ratio));
+  --s8: calc(var(--s7) * var(--ratio));
+  --s9: calc(var(--s8) * var(--ratio));
+  --s10: calc(var(--s9) * var(--ratio));
+  --s11: calc(var(--s10) * var(--ratio));
+  --s12: calc(var(--s11) * var(--ratio));
+  --line-height: 1.4;
+  --line-height-small: 1.2;
+  --measure: 60ch;
+  --measure-wide: 90ch;
+
+  /* Other stuff */
+  --font-serif: Georgia, serif;
+  --font-sans-serif: "Fira Sans", "Helvetica Neue", Helvetica, sans-serif;
+  --font-monospace: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  background-color: var(--background);
+  color: var(--text);
+  font-family: var(--font-sans-serif);
+  font-size: calc(0.65vw + 1em);
+  font-weight: 400;
+  line-height: var(--line-height);
+}
+
+/* Utilities */
+.sr-only {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+.sr-only.focusable:active,
+.sr-only.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  white-space: inherit;
+  width: auto;
+}
+
+/*  Hide visually and from screen readers, but maintain layout */
+.invisible {
+  visibility: hidden;
+}
+
+.clear:before,
+.clear:after {
+  content: "";
+  display: table;
+  table-layout: fixed;
+}
+
+.clear:after {
+  clear: both;
+}
+
+.callout,
+.alert {
+  border: 0.085em solid var(--lighttext);
+  border-radius: 0.085em;
+  padding: var(--s-1);
+}
+
+.intro {
+  font-size: var(--s2);
+}
+
+/* Stack abstraction.
+   https://every-layout.dev/layouts/stack/
+ */
+.stack > * + * {
+  margin-top: var(--s4);
+}
+
+.stack + .stack,
+.stack > .stack {
+  margin-top: var(--s4);
+}
+
+/* Horizontal navigation abstraction. */
+.nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.nav a {
+  display: inline-block;
+}
+
+/* Sidebar abstraction.
+   https://every-layout.dev/layouts/sidebar/
+ */
+.with-sidebar {
+  overflow: hidden;
+}
+
+.with-sidebar > * {
+  display: flex;
+  flex-wrap: wrap;
+  margin: calc(var(--s4) / 2 * -1);
+}
+
+.with-sidebar > * > * {
+  margin: calc(var(--s4) / 2);
+  flex-basis: 20%;
+  flex-grow: 1;
+}
+
+.with-sidebar > * > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-width: calc(75% - var(--s4));
+}
+
+/* Auto grid with no media queries
+   https://hankchizljaw.com/wrote/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/
+ */
+.auto-grid {
+  --auto-grid-min-size: 16rem;
+}
+
+.auto-grid > * {
+  max-width: 400px;
+}
+
+.auto-grid > * + * {
+  margin-top: 1rem;
+}
+
+@supports(display: grid) {
+  .auto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-gap: 1rem;
+  }
+
+  .auto-grid > * {
+    max-width: unset;
+  }
+
+  .auto-grid > * + * {
+    margin-top: unset;
+  }
+}
+
+/* Elements */
+/* Typography */
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+  clear: both;
+  font-weight: 700;
+  hyphens: auto;
+  line-height: var(--line-height-small);
+  word-wrap: break-word;
+}
+
+h1 .h1,
+h2 .h2,
+h3 .h3,
+h4 .h4,
+h5 .h5,
+h6 .h6 {
+  line-height: var(--line-height-small);
+}
+
+h1, .h1 {
+  font-size: var(--s6);
+}
+
+h2, .h2 {
+  font-size: var(--s5);
+}
+
+h3, .h3 {
+  font-size: var(--s4);
+}
+
+h4, .h4 {
+  font-size: var(--s3);
+}
+
+h5, .h5 {
+  font-size: var(--s2);
+}
+
+h6, .h6 {
+  font-size: var(--s1);
+}
+
+dfn,
+em,
+i,
+figcaption {
+  font-style: italic;
+}
+
+blockquote {
+  border-left: 0.085em solid var(--lighttext);
+  font-style: italic;
+  padding: 0 var(--s1);
+}
+
+blockquote cite {
+  display: block;
+  font-weight: 700;
+  margin-top: var(--s3);
+}
+
+address {
+  font-style: italic;
+}
+
+b, strong {
+  font-weight: 700;
+}
+
+pre {
+  background-color: var(--secondary);
+  color: var(--text);
+  font-family: var(--font-monospace);
+  font-size: var(--s-1);
+  line-height: var(--line-height-small);
+  max-width: 100%;
+  overflow: auto;
+  padding: var(--s1) var(--s2);
+  white-space: pre-wrap;
+}
+
+code, kbd, var {
+  background-color: var(--secondary);
+  font-family: var(--font-monospace);
+  font-size: var(--s-1);
+}
+
+abbr {
+  border-bottom: 1px dotted var(--lighttext);
+  cursor: help;
+}
+
+mark {
+  background: #f7ff58;
+  color: var(--text);
+  text-decoration: none;
+}
+
+del {
+  background-color: var(--error);
+  text-decoration: line-through;
+}
+
+ins {
+  background-color: var(--success);
+  text-decoration: none;
+}
+
+blockquote, q {
+  quotes: "" "";
+}
+
+blockquote:before, blockquote:after, q:before, q:after {
+  content: "";
+}
+
+small {
+  font-size: var(--s-2);
+}
+
+table,
+th,
+td {
+  border: 0.085em solid var(--lighttext);
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+  border-width: 0.085em 0 0 0.085em;
+  padding: 0 !important;
+  table-layout: fixed;
+  /* Prevents HTML tables from becoming too wide */
+  width: 100%;
+}
+
+caption,
+th,
+td {
+  font-weight: normal;
+  text-align: left;
+}
+
+th {
+  font-weight: 700;
+}
+
+th,
+td {
+  border-width: 0 0.085em 0.085em 0;
+  padding: var(--s-2);
+}
+
+/* Forms */
+label {
+  font-weight: 700;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+  background-color: var(--background);
+  border: 0.085em solid var(--lighttext);
+  border-radius: 0.085em;
+  padding: var(--s-8);
+  -webkit-appearance: none;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+  border-color: var(--text);
+  outline: 2px dashed var(--primary);
+  outline-offset: 2px;
+}
+
+select {
+  border: 0.085em solid var(--lighttext);
+}
+
+select:focus {
+  border: 0.085em solid var(--text);
+  outline: 2px dashed var(--primary);
+}
+
+textarea {
+  padding-left: var(--s-8);
+  width: 100%;
+}
+
+button,
+.button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  background-color: var(--primary);
+  border: 0.085em solid var(--primary);
+  border-radius: 0.085em;
+  color: var(--background);
+  cursor: pointer;
+  font-family: var(--font-sans-serif-bold);
+  font-weight: 700;
+  padding: var(--s-12) var(--s-10);
+  position: relative;
+  -webkit-appearance: none;
+}
+
+button:hover,
+.button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  border-color: var(--text);
+}
+
+button:active,
+.button:active,
+input[type="button"]:active,
+input[type="reset"]:active,
+input[type="submit"]:active {
+  top: 2px;
+}
+
+button:focus,
+.button:focus,
+input[type="button"]:focus,
+input[type="reset"]:focus,
+input[type="submit"]:focus {
+  border-color: var(--text);
+  outline: 2px dashed var(--primary);
+  outline-offset: 2px;
+}
+
+.button.button-transparent {
+  background-color: transparent;
+  border-color: var(--text);
+  color: var(--text);
+}
+
+.button.button-transparent:hover,
+.button.button-transparent:focus {
+  background-color: var(--primary);
+  border-color: var(--primary);
+  color: var(--background);
+}
+
+.email-signup button {
+  margin-left: 5px;
+}
+
+button > svg,
+.button > svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.alert {
+  align-items: flex-start;
+  background: var(--alert-bg);
+  color: var(--alert-text);
+  display: flex;
+  margin-top: var(--s4);
+  animation: slide-up 250ms ease;
+}
+
+.alert[data-state='error'] {
+  background-color: var(--error);
+}
+
+.alert[data-state='success'] {
+  background-color: var(--success);
+}
+
+.alert svg {
+  position: relative;
+  margin-right: var(--s2);
+  top: 4px;
+}
+
+@keyframes slide-up {
+  0% {
+    opacity: 0;
+    transform: translateY(0.4rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Formatting */
+hr {
+  color: var(--lighttext);
+  height: var(--s-4);
+  margin-top: 0;
+}
+
+ul,
+ol {
+  margin-left: var(--s1);
+  margin-top: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: disc;
+}
+
+ol {
+  list-style: decimal;
+}
+
+li > ul,
+li > ol {
+  margin-bottom: 0;
+  margin-left: var(--s1);
+}
+
+dt {
+  border-bottom: 0.085em solid var(--lighttext);
+  font-weight: 700;
+  margin-bottom: var(--s-1);
+}
+
+dd {
+  margin-bottom: var(--s1);
+  margin-left: var(--s1);
+  margin-top: 0;
+}
+
+table {
+  width: 100%;
+}
+
+figcaption {
+  font-size: var(--s-1);
+}
+
+/* Navigation */
+.site-navigation a {
+  font-weight: 700;
+  padding: var(--s-4);
+  text-decoration: none;
+}
+
+.site-navigation a:hover {
+  text-decoration: underline;
+}
+
+/* Post Navigation */
+.issue-pagination a {
+  font-size: var(--s-1);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.issue-pagination svg,
+.issue-pagination a {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* Links */
+a {
+  color: var(--primary);
+  position: relative;
+  text-decoration: underline;
+}
+
+a:hover {
+  outline: 0;
+  text-decoration: none;
+}
+
+a:focus {
+  background-color: var(--primary);
+  color: var(--background);
+  outline: 2px dashed var(--primary);
+  outline-offset: 2px;
+  text-decoration: none;
+}
+
+a:active {
+  outline: 0;
+  top: 2px;
+}
+
+.skip-link {
+  font-size: var(--s-1);
+  font-weight: 700;
+  left: var(--s4);
+  max-width: none;
+  padding: var(--s-4);
+  position: absolute;
+  top: var(--s4);
+  z-index: 2;
+}
+
+.skip-link.focusable:focus {
+  position: absolute;
+}
+
+[tabindex="-1"]:focus {
+	outline: 2px dashed var(--primary);
+  outline-offset: 2px;
+}
+
+.image-link {
+  display: block;
+}
+
+.site-title:focus {
+  background-color: transparent;
+}
+
+/* Layout */
+body {
+  border-left: var(--s-8) solid var(--secondary);
+  border-right: var(--s-8) solid var(--secondary);
+}
+
+body::before {
+  background: var(--secondary);
+  content: "";
+  height: var(--s-8);
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+body::after {
+  background: var(--secondary);
+  bottom: 0;
+  content: "";
+  height: var(--s-8);
+  left: 0;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.inner-wrapper {
+  margin: 0 auto;
+  max-width: 50rem;
+  padding: var(--s12) var(--s1);
+}
+
+.site-header .inner-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.site-title,
+.site-navigation {
+  align-self: center;
+}
+
+.site-footer .inner-wrapper {
+  text-align: center;
+}
+
+.page-header > *,
+.issue-header > * {
+  max-width: var(--measure-wide);
+}
+.page-content > *,
+.issue-content > * {
+  max-width: var(--measure);
+}
+
+/* Issues */
+.issue-list .stack + .stack,
+.issue-list .stack > .stack {
+  margin-top: var(--s12);
+}
+
+.issue-list .issue-link {
+  display: inline-block;
+  max-width: var(--measure);
+}
+
+/* Issue meta */
+.issue .meta {
+  color: var(--lighttext);
+  font-size: var(--s-1);
+  font-style: italic;
+}
+
+.issues-template .issue .meta {
+  align-self: center;
+}
+
+.issues-template .issue-num {
+  position: relative;
+}
+
+.issue-pagination {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: var(--s12);
+}
+
+.issue-pagination .older-issues {
+  margin-right: auto;
+}
+
+.issue-pagination .newer-issues {
+  margin-left: auto;
+}
+
+.testimonial-list {
+  background-image: repeating-linear-gradient(45deg, var(--secondary) 0, var(--secondary) 1px, transparent 0, transparent 50%);
+  background-size: 25px 25px;
+}
+
+.testimonial {
+  background-color: var(--background);
+  margin: var(--s4) 0;
+  padding: var(--s1);
+}
+
+.testimonial-content {
+  font-size: var(--s2);
+  font-style: italic;
+}
+
+.testimonial-name {
+  font-weight: 700;
+}
+
+.testimonial-role {
+  font-style: italic;
+}

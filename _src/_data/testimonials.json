@@ -1,0 +1,14 @@
+[
+  {
+    "name": "Jane Smith",
+    "role": "Engineer",
+    "url": "https://example.com/",
+    "content": "Accessibility Weekly is so good."
+  },
+  {
+    "name": "John Smith",
+    "role": "Designer",
+    "url": "https://example.com/",
+    "content": "An inbox favorite every week."
+  }
+]

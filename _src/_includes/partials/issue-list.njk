@@ -1,0 +1,14 @@
+<ol class="issue-list with-sidebar stack">
+{% for issue in issuelist %}
+  <li class="issue h-entry stack{% if issue.url == url %} issuelist-item-active{% endif %}">
+    <div class="meta">
+      <span class="issue-num">
+        Issue #{{ issue.data.issuenum }}
+      </span>
+    </div>
+    <a href="{{ issue.url | url }}" class="issue-link">
+      <h2 class="title p-name">{% if issue.data.title %}{{ issue.data.title | markdownify }}{% else %}<code>{{ issue.url }}</code>{% endif %}</h2>
+    </a>
+  </li>
+{% endfor %}
+</ol>
