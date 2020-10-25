@@ -626,6 +626,10 @@ button > svg,
   top: 4px;
 }
 
+label + .inline-field-control {
+  margin-top: var(--s4);
+}
+
 @keyframes slide-up {
   0% {
     opacity: 0;
