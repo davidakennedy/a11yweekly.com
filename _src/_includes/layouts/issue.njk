@@ -2,8 +2,7 @@
 {% block content %}
   <article class="issue h-entry">
     <div class="issue-header stack">
-      {% set issuetitle = title or renderData.title %}
-      <h1 class="title p-name">{{ issuetitle | markdownify }}</h1>
+      <h1 class="title p-name">Issue #{{ issuenum }}</h1>
       <div class="meta">
         <span class="issue-num">
           Issue number {{ issuenum }}
