@@ -874,7 +874,7 @@ body::after {
 
 .testimonial {
   background-color: var(--background);
-  margin: var(--s4) 0;
+  margin: var(--s2) 0;
   padding: var(--s1);
 }
 
