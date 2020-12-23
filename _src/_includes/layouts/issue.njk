@@ -2,10 +2,10 @@
 {% block content %}
   <article class="issue h-entry">
     <div class="issue-header stack">
-      <h1 class="title p-name">Issue #{{ issuenum }}</h1>
+      <h1 class="title p-name">Issue #{{ page.fileSlug }}</h1>
       <div class="meta">
         <span class="issue-num">
-          Issue number {{ issuenum }}
+          Issue number {{ page.fileSlug }}
         </span>
         <span class="issue-date">
           was sent on <time class="date dt-published" datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time>

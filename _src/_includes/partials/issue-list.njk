@@ -3,7 +3,7 @@
   <li class="issue h-entry stack{% if issue.url == url %} issuelist-item-active{% endif %}">
     <div class="meta">
       <span class="issue-num">
-        Issue #{{ issue.data.issuenum }}
+        Issue #{{ issue.data.page.fileSlug }}
       </span>
     </div>
     <a href="{{ issue.url | url }}" class="issue-link">
