@@ -820,6 +820,7 @@ body::after {
 .issue-header > * {
   max-width: var(--measure-wide);
 }
+
 .page-content > *,
 .issue-content > * {
   max-width: var(--measure);
