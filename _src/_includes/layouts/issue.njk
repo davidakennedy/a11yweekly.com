@@ -14,6 +14,10 @@
     </div>
     <div class="issue-content e-content stack">
       {{ content | safe }}
+      <h2>Sponsorships and donations</h2>
+      {% include "partials/sponsor.njk" %}
+      <h2>Subscribe</h2>
+      {% include "partials/signup-form.njk" %}
     </div>
   </article>
 {% endblock %}
