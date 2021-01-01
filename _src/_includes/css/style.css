@@ -627,7 +627,7 @@ button > svg,
 }
 
 label + .inline-field-control {
-  margin-top: var(--s4);
+  margin-top: var(--s-8);
 }
 
 @keyframes slide-up {
