@@ -1,3 +1,28 @@
 [build]
   publish = "_site"
   command = "npm run build"
+
+# Redirect Netlify subdomain
+[[redirects]]
+  from = "https://a11yweekly.netlify.app/*"
+  to = "https://a11yweekly.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://a11yweekly.netlify.app/*"
+  to = "https://a11yweekly.com"
+  status = 301
+  force = true
+
+  [[redirects]]
+  from = "https://www.a11yweekly.netlify.app/*"
+  to = "https://a11yweekly.com"
+  status = 301
+  force = true
+
+[[redirects]]
+  from = "http://www.a11yweekly.netlify.app/*"
+  to = "https://a11yweekly.com"
+  status = 301
+  force = true
