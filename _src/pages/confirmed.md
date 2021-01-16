@@ -1,10 +1,10 @@
 ---
-title: Thank You for Subscribing
+title: All Confirmed
 description: You're the best for signing up.
-permalink: subscribed/index.html
+permalink: confirmed/index.html
 ---
 
-Thank you for signing up! Next, make sure to check your email and confirm your subscribtion.
+You'll receive a weekly newsletter at the email address you provided.
 
 ## Make a suggestion
 
