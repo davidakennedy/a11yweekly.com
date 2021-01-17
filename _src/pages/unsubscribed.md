@@ -8,4 +8,4 @@ Thank you for reading.
 
 ## Make a suggestion
 
-Have a suggestion for a way to improce Accessibility Weekly? Email it to <hello@a11yweekly.com>.
+Have a suggestion for a way to improve Accessibility Weekly? Email it to <hello@a11yweekly.com>.
