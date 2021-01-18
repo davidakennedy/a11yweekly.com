@@ -608,7 +608,7 @@ button > svg,
   background: var(--alert-bg);
   color: var(--alert-text);
   display: flex;
-  margin-top: var(--s4);
+  margin-top: var(--s-8);
   animation: slide-up 250ms ease;
 }
 
