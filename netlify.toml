@@ -15,7 +15,7 @@
   status = 301
   force = true
 
-  [[redirects]]
+[[redirects]]
   from = "https://www.a11yweekly.netlify.app/*"
   to = "https://a11yweekly.com"
   status = 301
@@ -25,4 +25,11 @@
   from = "http://www.a11yweekly.netlify.app/*"
   to = "https://a11yweekly.com"
   status = 301
+  force = true
+
+# Redirect feed url
+[[redirects]]
+  from = "/feed"
+  to = "/feed/index.xml"
+  status = 200
   force = true
