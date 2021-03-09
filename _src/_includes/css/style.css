@@ -1,41 +1,49 @@
 /* Fonts */
 /* fira-sans-regular - latin */
 @font-face {
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
   font-style: normal;
   font-weight: 400;
-  src: local('Fira Sans Regular'), local('FiraSans-Regular'), url('/assets/fonts/fira-sans-v10-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('/assets/fonts/fira-sans-v10-latin-regular.woff') format('woff');
+  src: local("Fira Sans Regular"), local("FiraSans-Regular"),
+    url("/assets/fonts/fira-sans-v10-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/assets/fonts/fira-sans-v10-latin-regular.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* fira-sans-italic - latin */
 @font-face {
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
   font-style: italic;
   font-weight: 400;
-  src: local('Fira Sans Italic'), local('FiraSans-Italic'), url('/assets/fonts/fira-sans-v10-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('/assets/fonts/fira-sans-v10-latin-italic.woff') format('woff');
+  src: local("Fira Sans Italic"), local("FiraSans-Italic"),
+    url("/assets/fonts/fira-sans-v10-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/assets/fonts/fira-sans-v10-latin-italic.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* fira-sans-700 - latin */
 @font-face {
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
   font-style: normal;
   font-weight: 700;
-  src: local('Fira Sans Bold'), local('FiraSans-Bold'), url('/assets/fonts/fira-sans-v10-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('/assets/fonts/fira-sans-v10-latin-700.woff') format('woff');
+  src: local("Fira Sans Bold"), local("FiraSans-Bold"),
+    url("/assets/fonts/fira-sans-v10-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/assets/fonts/fira-sans-v10-latin-700.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
 /* fira-sans-700italic - latin */
 @font-face {
-  font-family: 'Fira Sans';
+  font-family: "Fira Sans";
   font-style: italic;
   font-weight: 700;
-  src: local('Fira Sans Bold Italic'), local('FiraSans-BoldItalic'), url('/assets/fonts/fira-sans-v10-latin-700italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-  url('/assets/fonts/fira-sans-v10-latin-700italic.woff') format('woff');
+  src: local("Fira Sans Bold Italic"), local("FiraSans-BoldItalic"),
+    url("/assets/fonts/fira-sans-v10-latin-700italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("/assets/fonts/fira-sans-v10-latin-700italic.woff") format("woff");
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
@@ -47,7 +55,8 @@
  */
 
 /* Box sizing rules */
-*, *::before,
+*,
+*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -110,7 +119,10 @@ article > * + * {
 }
 
 /* Inherit fonts for inputs and buttons */
-input, button, textarea, select {
+input,
+button,
+textarea,
+select {
   font: inherit;
 }
 
@@ -176,7 +188,10 @@ img:not([alt]) {
   /* Other stuff */
   --font-serif: Georgia, serif;
   --font-sans-serif: "Fira Sans", "Helvetica Neue", Helvetica, sans-serif;
-  --font-monospace: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+  --font-monospace: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console",
+    "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
+    "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
+    monospace;
   background-color: var(--background);
   color: var(--text);
   font-family: var(--font-sans-serif);
@@ -299,10 +314,13 @@ img:not([alt]) {
   margin-top: 1rem;
 }
 
-@supports(display: grid) {
+@supports (display: grid) {
   .auto-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+    grid-template-columns: repeat(
+      auto-fill,
+      minmax(var(--auto-grid-min-size), 1fr)
+    );
     grid-gap: 1rem;
   }
 
@@ -317,12 +335,18 @@ img:not([alt]) {
 
 /* Elements */
 /* Typography */
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
   clear: both;
   font-weight: 700;
   hyphens: auto;
@@ -339,27 +363,33 @@ h6 .h6 {
   line-height: var(--line-height-small);
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: var(--s6);
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: var(--s5);
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: var(--s4);
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: var(--s3);
 }
 
-h5, .h5 {
+h5,
+.h5 {
   font-size: var(--s2);
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: var(--s1);
 }
 
@@ -386,7 +416,8 @@ address {
   font-style: italic;
 }
 
-b, strong {
+b,
+strong {
   font-weight: 700;
 }
 
@@ -402,7 +433,9 @@ pre {
   white-space: pre-wrap;
 }
 
-code, kbd, var {
+code,
+kbd,
+var {
   background-color: var(--secondary);
   font-family: var(--font-monospace);
   font-size: var(--s-1);
@@ -429,11 +462,15 @@ ins {
   text-decoration: none;
 }
 
-blockquote, q {
+blockquote,
+q {
   quotes: "" "";
 }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: "";
 }
 
@@ -612,11 +649,11 @@ button > svg,
   animation: slide-up 250ms ease;
 }
 
-.alert[data-state='error'] {
+.alert[data-state="error"] {
   background-color: var(--error);
 }
 
-.alert[data-state='success'] {
+.alert[data-state="success"] {
   background-color: var(--success);
 }
 
@@ -754,7 +791,7 @@ a:active {
 }
 
 [tabindex="-1"]:focus {
-	outline: 2px dashed var(--primary);
+  outline: 2px dashed var(--primary);
   outline-offset: 2px;
 }
 
@@ -869,7 +906,13 @@ body::after {
 }
 
 .testimonial-list {
-  background-image: repeating-linear-gradient(45deg, var(--secondary) 0, var(--secondary) 1px, transparent 0, transparent 50%);
+  background-image: repeating-linear-gradient(
+    45deg,
+    var(--secondary) 0,
+    var(--secondary) 1px,
+    transparent 0,
+    transparent 50%
+  );
   background-size: 25px 25px;
 }
 
