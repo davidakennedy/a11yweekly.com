@@ -55,8 +55,8 @@ const handleFormSubmit = (evt) => {
 
   if (!validationRegex.test(emailElement.value.trim())) {
     alertElement.innerHTML = renderAlert("error");
-      emailElement.setAttribute("aria-invalid", "true");
-      return;
-    }
-    formElement.submit();
+    emailElement.setAttribute("aria-invalid", "true");
+    return;
+  }
+  formElement.submit();
 };
