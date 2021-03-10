@@ -182,6 +182,7 @@ img:not([alt]) {
   --s12: calc(var(--s11) * var(--ratio));
   --line-height: 1.4;
   --line-height-small: 1.2;
+  --measure-narrow: 40ch;
   --measure: 60ch;
   --measure-wide: 90ch;
 
@@ -855,11 +856,50 @@ body::after {
 
 .page-header > *,
 .issue-header > * {
-  max-width: var(--measure-wide);
+  max-width: var(--measure);
 }
 
-.page-content > *,
-.issue-content > * {
+.page-header > h1,
+.issue-header > h1 {
+  max-width: var(--measure-narrow);
+}
+
+.page-content h2,
+.issue-content h2,
+.page-content h3,
+.issue-content h3,
+.page-content h4,
+.issue-content h4,
+.page-content h5,
+.issue-content h5,
+.page-content h6,
+.issue-content h6 {
+  max-width: var(--measure-narrow);
+}
+
+.page-content > h2 + *,
+.issue-content > h2 + *,
+.page-content > h3 + *,
+.issue-content > h3 + *,
+.page-content > h4 + *,
+.issue-content > h4 + *,
+.page-content > h5 + *,
+.issue-content > h5 + *,
+.page-content > h6 + *,
+.issue-content > h6 + *,
+.page-content > dt + *,
+.issue-content > dt + * {
+  margin-top: var(--s-10);
+}
+
+.page-content p,
+.issue-content p,
+.page-content li,
+.issue-content li,
+.page-content dt,
+.issue-content dt,
+.page-content dd,
+.issue-content dd {
   max-width: var(--measure);
 }
 
@@ -903,6 +943,10 @@ body::after {
 
 .issue-pagination .newer-issues {
   margin-left: auto;
+}
+
+.issue-template .meta {
+  margin-top: var(--s-10);
 }
 
 .testimonial-list {
