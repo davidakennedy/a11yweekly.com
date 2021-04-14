@@ -1,5 +1,5 @@
 ---
-title: Accessibility Weekly
+title: Welcome to Accessibility Weekly
 description: A weekly newsletter that helps you bring accessibility into your everyday work.
 layout: layouts/home.njk
 templateClass: home-template
