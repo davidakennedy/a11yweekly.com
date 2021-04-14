@@ -6,7 +6,7 @@ const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
 
 // Configuration and plugins.
-module.exports = function(eleventyConfig) {
+module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(pluginRss);
   eleventyConfig.addPlugin(pluginSyntaxHighlight);
   eleventyConfig.setDataDeepMerge(true);
@@ -18,14 +18,14 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addLayoutAlias("issue", "layouts/issue.njk");
 
   // Filters
-  eleventyConfig.addFilter("readableDate", dateObj => {
+  eleventyConfig.addFilter("readableDate", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toFormat(
       "LLL dd yyyy"
     );
   });
 
   // https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#valid-date-string
-  eleventyConfig.addFilter("htmlDateString", dateObj => {
+  eleventyConfig.addFilter("htmlDateString", (dateObj) => {
     return DateTime.fromJSDate(dateObj, { zone: "utc" }).toISO();
   });
 
@@ -44,7 +44,7 @@ module.exports = function(eleventyConfig) {
     html: true,
     breaks: true,
     typographer: true,
-    quotes: '“”‘’'
+    quotes: "“”‘’",
   });
   eleventyConfig.addFilter("markdownify", (str) => {
     return markdownItRenderer.renderInline(str);
@@ -52,12 +52,12 @@ module.exports = function(eleventyConfig) {
 
   // Development filters
   const CleanCSS = require("clean-css");
-  eleventyConfig.addFilter("cssmin", function(code) {
+  eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({ sourceMap: true }).minify(code).styles;
   });
 
   const Terser = require("terser");
-  eleventyConfig.addFilter("jsmin", function(code) {
+  eleventyConfig.addFilter("jsmin", function (code) {
     let minified = Terser.minify(code);
     if (minified.error) {
       console.log("Terser error: ", minified.error);
@@ -67,17 +67,17 @@ module.exports = function(eleventyConfig) {
     return minified.code;
   });
 
-  eleventyConfig.addFilter("imgPath", function(file) {
+  eleventyConfig.addFilter("imgPath", function (file) {
     return `/assets/img/uploads/${file}`;
   });
 
   const htmlmin = require("html-minifier");
-  eleventyConfig.addTransform("htmlmin", function(content, outputPath) {
+  eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
     if (outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
-        collapseWhitespace: true
+        collapseWhitespace: true,
       });
       return minified;
     }
@@ -85,18 +85,19 @@ module.exports = function(eleventyConfig) {
   });
 
   // Get current year for copyright.
-  eleventyConfig.addShortcode("copyrightDates", startYear => {
+  eleventyConfig.addShortcode("copyrightDates", (startYear) => {
     return startYear + " - " + new Date().getFullYear();
   });
 
-  eleventyConfig.addCollection("nav", function(collection) {
-    return collection.getFilteredByTag("nav").sort(function(a, b) {
+  eleventyConfig.addCollection("nav", function (collection) {
+    return collection.getFilteredByTag("nav").sort(function (a, b) {
       return a.data.navorder - b.data.navorder;
     });
   });
 
   // Pass these directories through.
   eleventyConfig.addPassthroughCopy("_src/assets");
+  eleventyConfig.addPassthroughCopy("_src/favicon.ico");
   eleventyConfig.addPassthroughCopy("_src/robots.txt");
   eleventyConfig.addPassthroughCopy("_src/humans.txt");
   eleventyConfig.addPassthroughCopy("_src/site.webmanifest");
@@ -106,15 +107,15 @@ module.exports = function(eleventyConfig) {
     html: true,
     breaks: true,
     typographer: true,
-    quotes: '“”‘’'
+    quotes: "“”‘’",
   });
   eleventyConfig.setLibrary("md", markdownLibrary);
 
   // Browsersync Overrides
   eleventyConfig.setBrowserSyncConfig({
     callbacks: {
-      ready: function(err, browserSync) {
-        const content_404 = fs.readFileSync('_site/404.html');
+      ready: function (err, browserSync) {
+        const content_404 = fs.readFileSync("_site/404.html");
 
         browserSync.addMiddleware("*", (req, res) => {
           // Provides the 404 content without redirect.
@@ -124,7 +125,7 @@ module.exports = function(eleventyConfig) {
       },
     },
     ui: false,
-    ghostMode: false
+    ghostMode: false,
   });
 
   return {
@@ -144,7 +145,7 @@ module.exports = function(eleventyConfig) {
       input: "_src",
       includes: "_includes",
       data: "_data",
-      output: "_site"
-    }
+      output: "_site",
+    },
   };
 };
