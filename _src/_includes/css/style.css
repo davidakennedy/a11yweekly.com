@@ -792,8 +792,7 @@ a:active {
 }
 
 [tabindex="-1"]:focus {
-  outline: 2px dashed var(--primary);
-  outline-offset: 2px;
+  outline: 0 none;
 }
 
 .image-link {
