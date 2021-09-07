@@ -135,6 +135,7 @@ html {
     monospace;
   background-color: #f0f0f0;
   background-color: var(--background);
+  color: #0c0c0c;
   color: var(--text);
   font-family: var(--font-sans-serif);
   font-size: calc(0.65vw + 1em);
@@ -184,6 +185,7 @@ html {
 
 .callout,
 .alert {
+  border: 0.085em solid #3e3e3e;
   border: 0.085em solid var(--lighttext);
   border-radius: 0.085em;
   padding: var(--s-1);
@@ -343,6 +345,7 @@ figcaption {
 }
 
 blockquote {
+  border-left: 0.085em solid #3e3e3e;
   border-left: 0.085em solid var(--lighttext);
   font-style: italic;
   padding: 0 var(--s1);
@@ -365,6 +368,7 @@ strong {
 
 pre {
   background-color: var(--secondary);
+  color: #0c0c0c;
   color: var(--text);
   font-family: var(--font-monospace);
   font-size: var(--s-1);
@@ -384,12 +388,14 @@ var {
 }
 
 abbr {
+  border-bottom: 1px dotted #3e3e3e;
   border-bottom: 1px dotted var(--lighttext);
   cursor: help;
 }
 
 mark {
   background: #f7ff58;
+  color: #0c0c0c;
   color: var(--text);
   text-decoration: none;
 }
@@ -423,6 +429,7 @@ small {
 table,
 th,
 td {
+  border: 0.085em solid #3e3e3e;
   border: 0.085em solid var(--lighttext);
 }
 
@@ -476,6 +483,7 @@ input[type="color"],
 textarea {
   background-color: #f0f0f0;
   background-color: var(--background);
+  border: 0.085em solid #3e3e3e;
   border: 0.085em solid var(--lighttext);
   border-radius: 0.085em;
   padding: var(--s-8);
@@ -498,16 +506,19 @@ input[type="datetime"]:focus,
 input[type="datetime-local"]:focus,
 input[type="color"]:focus,
 textarea:focus {
+  border-color: #0c0c0c;
   border-color: var(--text);
   outline: 2px dashed var(--primary);
   outline-offset: 2px;
 }
 
 select {
+  border: 0.085em solid #3e3e3e;
   border: 0.085em solid var(--lighttext);
 }
 
 select:focus {
+  border: 0.085em solid #0c0c0c;
   border: 0.085em solid var(--text);
   outline: 2px dashed var(--primary);
 }
@@ -540,6 +551,7 @@ button:hover,
 input[type="button"]:hover,
 input[type="reset"]:hover,
 input[type="submit"]:hover {
+  border-color: #0c0c0c;
   border-color: var(--text);
 }
 
@@ -556,6 +568,7 @@ button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
+  border-color: #0c0c0c;
   border-color: var(--text);
   outline: 2px dashed var(--primary);
   outline-offset: 2px;
@@ -563,7 +576,9 @@ input[type="submit"]:focus {
 
 .button.button-transparent {
   background-color: transparent;
+  border-color: #0c0c0c;
   border-color: var(--text);
+  color: #0c0c0c;
   color: var(--text);
 }
 
@@ -625,6 +640,7 @@ label + .inline-field-control {
 
 /* Formatting */
 hr {
+  color: #3e3e3e;
   color: var(--lighttext);
   height: var(--s-4);
   margin-top: 0;
@@ -652,6 +668,7 @@ li > ol {
 }
 
 dt {
+  border-bottom: 0.085em solid #3e3e3e;
   border-bottom: 0.085em solid var(--lighttext);
   font-weight: 700;
   margin-bottom: var(--s-1);
@@ -864,6 +881,7 @@ body::after {
 
 /* Issue meta */
 .issue .meta {
+  color: #3e3e3e;
   color: var(--lighttext);
   font-size: var(--s-1);
   font-style: italic;
