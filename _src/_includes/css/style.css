@@ -133,6 +133,7 @@ html {
     "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono",
     "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier,
     monospace;
+  background-color: #f0f0f0;
   background-color: var(--background);
   color: var(--text);
   font-family: var(--font-sans-serif);
@@ -473,6 +474,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
+  background-color: #f0f0f0;
   background-color: var(--background);
   border: 0.085em solid var(--lighttext);
   border-radius: 0.085em;
@@ -523,6 +525,7 @@ input[type="submit"] {
   background-color: var(--primary);
   border: 0.085em solid var(--primary);
   border-radius: 0.085em;
+  color: #f0f0f0;
   color: var(--background);
   cursor: pointer;
   font-family: var(--font-sans-serif-bold);
@@ -568,6 +571,7 @@ input[type="submit"]:focus {
 .button.button-transparent:focus {
   background-color: var(--primary);
   border-color: var(--primary);
+  color: #f0f0f0;
   color: var(--background);
 }
 
@@ -709,6 +713,7 @@ a:hover {
 
 a:focus {
   background-color: var(--primary);
+  color: #f0f0f0;
   color: var(--background);
   outline: 2px dashed var(--primary);
   outline-offset: 2px;
@@ -904,6 +909,7 @@ body::after {
 }
 
 .testimonial {
+  background-color: #f0f0f0;
   background-color: var(--background);
   margin: var(--s2) 0;
   padding: var(--s1);
