@@ -668,6 +668,10 @@ figcaption {
 }
 
 /* Navigation */
+.site-navigation ul {
+  list-style: none;
+}
+
 .site-navigation a {
   font-weight: 700;
   padding: var(--s-4);
