@@ -845,7 +845,7 @@ body::after {
 
 .inner-wrapper {
   margin: 0 auto;
-  max-width: 50rem;
+  max-width: 75rem;
   padding: var(--s3) var(--s1);
 }
 
