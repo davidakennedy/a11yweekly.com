@@ -510,37 +510,13 @@ textarea {
 
 input[type="text"]:focus,
 input[type="email"]:focus,
-input[type="url"]:focus,
-input[type="password"]:focus,
 input[type="search"]:focus,
-input[type="number"]:focus,
-input[type="tel"]:focus,
-input[type="range"]:focus,
-input[type="date"]:focus,
-input[type="month"]:focus,
-input[type="week"]:focus,
-input[type="time"]:focus,
-input[type="datetime"]:focus,
-input[type="datetime-local"]:focus,
-input[type="color"]:focus,
 textarea:focus {
   border-color: #0c0c0c;
   border-color: var(--text);
   outline: 2px dashed #bb3355;
   outline: 2px dashed var(--primary);
   outline-offset: 2px;
-}
-
-select {
-  border: 0.085em solid #3e3e3e;
-  border: 0.085em solid var(--lighttext);
-}
-
-select:focus {
-  border: 0.085em solid #0c0c0c;
-  border: 0.085em solid var(--text);
-  outline: 2px dashed #bb3355;
-  outline: 2px dashed var(--primary);
 }
 
 textarea {
