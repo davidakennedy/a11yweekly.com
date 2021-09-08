@@ -846,7 +846,7 @@ body::after {
 .inner-wrapper {
   margin: 0 auto;
   max-width: 75rem;
-  padding: var(--s3) var(--s1);
+  padding: var(--s3) var(--s0);
 }
 
 .site-header .inner-wrapper {
