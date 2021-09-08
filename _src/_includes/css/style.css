@@ -885,7 +885,8 @@ body::after {
 .issue-content > h6 + *,
 .page-content > dt + *,
 .issue-content > dt + * {
-  margin-top: var(--s-5);
+  margin-top: 0.36445em;
+  margin-top: var(--s-3);
 }
 
 .page-content p,
