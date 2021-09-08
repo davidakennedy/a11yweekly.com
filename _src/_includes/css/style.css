@@ -592,8 +592,8 @@ input[type="submit"]:focus {
   color: var(--background);
 }
 
-.email-signup button {
-  margin-left: 5px;
+.email-signup input {
+  margin: 0 0.25em 0.25em 0;
 }
 
 button > svg,
@@ -628,8 +628,8 @@ button > svg,
 }
 
 label + .inline-field-control {
-  margin-top: 0.459em;
-  margin-top: var(--s-2);
+  margin-top: 0.2603em;
+  margin-top: var(--s-4);
 }
 
 @keyframes slide-up {
