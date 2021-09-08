@@ -723,6 +723,12 @@ figcaption {
   font-size: 1.172rem;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 /* Navigation */
 .site-navigation ul {
   list-style: none;
