@@ -935,15 +935,18 @@ body::after {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-bottom: -0.5em;
   margin-top: 2.744em;
   margin-top: var(--s3);
 }
 
 .issue-pagination .older-issues {
+  margin-bottom: 0.5em;
   margin-right: auto;
 }
 
 .issue-pagination .newer-issues {
+  margin-bottom: 0.5em;
   margin-left: auto;
 }
 
