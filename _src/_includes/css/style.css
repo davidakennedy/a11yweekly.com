@@ -904,6 +904,12 @@ body::after {
 }
 
 /* Issues */
+.issue-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
 .issue-list .stack + .stack,
 .issue-list .stack > .stack {
   margin-top: 2.744em;
