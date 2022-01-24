@@ -3,6 +3,6 @@
   "tags": [
     "issues"
   ],
-  "permalink": "issue/{{ page.fileSlug | slug }}/",
+  "permalink": "issue/{{ page.fileSlug | slugify }}/",
   "layout": "layouts/issue.njk"
 }
