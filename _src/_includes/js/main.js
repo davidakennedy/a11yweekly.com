@@ -60,3 +60,6 @@ const handleFormSubmit = (evt) => {
   }
   formElement.submit();
 };
+
+const subscribe = document.getElementById("subscribe");
+subscribe.addEventListener("click", handleFormSubmit, false);

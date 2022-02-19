@@ -898,7 +898,9 @@ body::after {
 .page-content dt,
 .issue-content dt,
 .page-content dd,
-.issue-content dd {
+.issue-content dd,
+.page-content .signup-alert,
+.issue-content .signup-alert {
   max-width: 60ch;
   max-width: var(--measure);
 }
