@@ -4,6 +4,8 @@ const fs = require("fs");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
+const CleanCSS = require("clean-css");
+const htmlmin = require("html-minifier");
 
 // Configuration and plugins.
 module.exports = function (eleventyConfig) {
@@ -55,25 +57,37 @@ module.exports = function (eleventyConfig) {
     return `/assets/img/uploads/${file}`;
   });
 
-  const CleanCSS = require("clean-css");
-  eleventyConfig.addFilter("cssmin", function (code) {
-    return new CleanCSS({ sourceMap: true }).minify(code).styles;
+  // Simple cache busting
+  // https://rob.cogit8.org/posts/2020-10-28-simple-11ty-cache-busting/
+  eleventyConfig.addFilter("bust", (url) => {
+    const [urlPart, paramPart] = url.split("?");
+    const params = new URLSearchParams(paramPart || "");
+    params.set("v", DateTime.local().toFormat("X"));
+    return `${urlPart}?${params}`;
   });
 
-  const Terser = require("terser");
-  eleventyConfig.addFilter("jsmin", function (code) {
-    let minified = Terser.minify(code);
-    if (minified.error) {
-      console.log("Terser error: ", minified.error);
-      return code;
-    }
+  // Minify CSS
+  eleventyConfig.addTemplateFormats("css");
 
-    return minified.code;
+  eleventyConfig.addExtension("css", {
+    outputFileExtension: "css",
+    compile: async (inputContent) => {
+      return async () => {
+        if (process.env.ELEVENTY_ENV === "prod") {
+          return new Promise((resolve) => {
+            new CleanCSS({}).minify(inputContent, (_, data) => {
+              resolve(data.styles);
+            });
+          });
+        } else {
+          return inputContent.css;
+        }
+      };
+    },
   });
 
-  const htmlmin = require("html-minifier");
   eleventyConfig.addTransform("htmlmin", function (content, outputPath) {
-    if (outputPath.endsWith(".html")) {
+    if (process.env.ELEVENTY_ENV === "prod" && outputPath.endsWith(".html")) {
       let minified = htmlmin.minify(content, {
         useShortDoctype: true,
         removeComments: true,
