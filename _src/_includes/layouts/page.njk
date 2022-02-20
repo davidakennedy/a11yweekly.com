@@ -1,4 +1,7 @@
 {% extends 'layouts/base.njk' %}
+{% block header %}
+  {% include "partials/header.njk" %}
+{% endblock %}
 {% block content %}
   <section class="page">
     <div class="page-header stack">
@@ -9,4 +12,7 @@
       {{ content | safe }}
     </div>
   </section>
+{% endblock %}
+{% block footer %}
+  {% include "partials/footer.njk" %}
 {% endblock %}

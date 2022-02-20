@@ -1,4 +1,7 @@
 {% extends 'layouts/base.njk' %}
+{% block header %}
+  {% include "partials/header.njk" %}
+{% endblock %}
 {% block content %}
   <article class="issue h-entry">
     <div class="issue-header stack">
@@ -22,4 +25,7 @@
       {% include "partials/signup-form.njk" %}
     </div>
   </article>
+{% endblock %}
+{% block footer %}
+  {% include "partials/footer.njk" %}
 {% endblock %}
