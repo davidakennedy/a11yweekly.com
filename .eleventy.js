@@ -50,6 +50,11 @@ module.exports = function (eleventyConfig) {
   });
 
   // Development filters
+  // Adjust image paths for social images
+  eleventyConfig.addFilter("imgPath", function (file) {
+    return `/assets/img/uploads/${file}`;
+  });
+
   const CleanCSS = require("clean-css");
   eleventyConfig.addFilter("cssmin", function (code) {
     return new CleanCSS({ sourceMap: true }).minify(code).styles;
@@ -64,10 +69,6 @@ module.exports = function (eleventyConfig) {
     }
 
     return minified.code;
-  });
-
-  eleventyConfig.addFilter("imgPath", function (file) {
-    return `/assets/img/uploads/${file}`;
   });
 
   const htmlmin = require("html-minifier");
