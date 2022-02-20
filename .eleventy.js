@@ -5,6 +5,7 @@ const pluginRss = require("@11ty/eleventy-plugin-rss");
 const pluginSyntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
 const markdownIt = require("markdown-it");
 const CleanCSS = require("clean-css");
+const terser = require("terser");
 const htmlmin = require("html-minifier");
 
 // Configuration and plugins.
@@ -81,6 +82,25 @@ module.exports = function (eleventyConfig) {
           });
         } else {
           return inputContent.css;
+        }
+      };
+    },
+  });
+
+  // Minify JS
+  eleventyConfig.addTemplateFormats("js");
+
+  eleventyConfig.addExtension("js", {
+    outputFileExtension: "js",
+    compile: function (inputContent, inputPath) {
+      if (!inputPath.startsWith("./_src/assets/")) return;
+
+      return async (data) => {
+        if (process.env.ELEVENTY_ENV === "prod") {
+          let result = await terser.minify(inputContent);
+          return result.code;
+        } else {
+          return inputContent.code;
         }
       };
     },
