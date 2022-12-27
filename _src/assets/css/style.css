@@ -534,8 +534,8 @@ input[type="submit"]:focus {
 .button.button-transparent:focus {
   background-color: #bb3355;
   background-color: var(--primary);
-  border-color: #bb3355;
-  border-color: var(--primary);
+  border-color: #0c0c0c;
+  border-color: var(--text);
   color: #f0f0f0;
   color: var(--background);
 }
