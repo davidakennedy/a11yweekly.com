@@ -35,21 +35,7 @@
   /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 
-/* fira-sans-700italic - latin */
-@font-face {
-  font-family: "Fira Sans";
-  font-style: italic;
-  font-weight: 700;
-  src: local("Fira Sans Bold Italic"), local("FiraSans-BoldItalic"),
-    url("/assets/fonts/fira-sans-v10-latin-700italic.woff2") format("woff2"),
-    /* Chrome 26+, Opera 23+, Firefox 39+ */
-      url("/assets/fonts/fira-sans-v10-latin-700italic.woff") format("woff");
-  /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-
-/* CSS Reset 
- * Inspired by: https://piccalil.li/blog/a-modern-css-reset
-*/
+/* Reset-ish */
 *,
 :after,
 :before {
@@ -65,20 +51,6 @@ button,
 textarea,
 select {
   font: inherit;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-/* Remove all animations and transitions for people that prefer not to see them */
-@media (prefers-reduced-motion: reduce) {
-  * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
-    scroll-behavior: auto !important;
-  }
 }
 
 /* Variables */
@@ -172,22 +144,6 @@ body {
   position: static;
   white-space: inherit;
   width: auto;
-}
-
-/*  Hide visually and from screen readers, but maintain layout */
-.invisible {
-  visibility: hidden;
-}
-
-.clear:before,
-.clear:after {
-  content: "";
-  display: table;
-  table-layout: fixed;
-}
-
-.clear:after {
-  clear: both;
 }
 
 .callout,
@@ -307,16 +263,6 @@ h6,
   line-height: 1.2;
   line-height: var(--line-height-small);
   word-wrap: break-word;
-}
-
-h1 .h1,
-h2 .h2,
-h3 .h3,
-h4 .h4,
-h5 .h5,
-h6 .h6 {
-  line-height: 1.2;
-  line-height: var(--line-height-small);
 }
 
 h1,
