@@ -498,6 +498,9 @@ input[type="reset"]:hover,
 input[type="submit"]:hover {
   border-color: #0c0c0c;
   border-color: var(--text);
+  outline: 2px solid #0c0c0c;
+  outline: 2px solid var(--text);
+  outline-offset: 2px;
 }
 
 button:active,
@@ -522,8 +525,7 @@ input[type="submit"]:focus {
 
 .button.button-transparent {
   background-color: transparent;
-  border-color: #0c0c0c;
-  border-color: var(--text);
+  border-color: transparent;
   color: #0c0c0c;
   color: var(--text);
 }
