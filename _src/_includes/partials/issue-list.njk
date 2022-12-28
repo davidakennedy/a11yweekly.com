@@ -1,14 +1,17 @@
-<ol class="issue-list with-sidebar stack">
+<ol class="issue-list stack">
 {% for issue in issuelist %}
   <li class="issue h-entry stack{% if issue.url == url %} issuelist-item-active{% endif %}">
-    <div class="meta">
-      <span class="issue-num">
-        Issue #{{ issue.data.page.fileSlug }}
-      </span>
-    </div>
     <a href="{{ issue.url | url }}" class="issue-link">
       <h2 class="title p-name">{% if issue.data.title %}{{ issue.data.title | markdownify }}{% else %}<code>{{ issue.url }}</code>{% endif %}</h2>
     </a>
+    <div class="meta">
+      <span class="issue-num">
+        Issue number {{ issue.data.page.fileSlug }}
+      </span>
+      <span class="issue-date">
+        was sent on <time class="date dt-published" datetime="{{ issue.data.date | htmlDateString }}">{{ issue.data.date | readableDate }}</time>
+      </span>
+    </div>
   </li>
 {% endfor %}
 </ol>

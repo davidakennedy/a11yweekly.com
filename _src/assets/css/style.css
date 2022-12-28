@@ -184,31 +184,6 @@ body {
   display: inline-block;
 }
 
-/* Sidebar abstraction.
-   https://every-layout.dev/layouts/sidebar/
- */
-.with-sidebar {
-  overflow: hidden;
-}
-
-.with-sidebar > * {
-  display: flex;
-  flex-wrap: wrap;
-  margin: calc(1.4em / 2 * -1);
-}
-
-.with-sidebar > * > * {
-  margin: calc(1.4em / 2);
-  flex-basis: 20%;
-  flex-grow: 1;
-}
-
-.with-sidebar > * > :last-child {
-  flex-basis: 0;
-  flex-grow: 999;
-  min-width: calc(75% - 1.4em);
-}
-
 /* Auto grid with no media queries
    https://hankchizljaw.com/wrote/create-a-responsive-grid-layout-with-no-media-queries-using-css-grid/
  */
@@ -869,20 +844,17 @@ body::after {
   max-width: var(--measure);
 }
 
+.issue-list .meta {
+  margin-top: 0.714285714286em;
+  --stack-space: var(--s-1);
+}
+
 /* Issue meta */
 .issue .meta {
   color: #3e3e3e;
   color: var(--lighttext);
   font-size: 1.172rem;
   font-style: italic;
-}
-
-.issues-template .issue .meta {
-  align-self: center;
-}
-
-.issues-template .issue-num {
-  position: relative;
 }
 
 .issue-pagination {
