@@ -1,14 +1,57 @@
 [
   {
-    "name": "Jane Smith",
-    "role": "Engineer",
-    "url": "https://example.com/",
-    "content": "Accessibility Weekly is so good."
+    "name": "Kate Kalcevich",
+    "role": "Head of Accessibility Innovation",
+    "content": "I've been reading your newsletter every week for years now. I feel like it's the best source of digital accessibility news on the Internet. Not only do I read it myself, but I also share some of the most interesting articles with my coworkers at Fable."
   },
   {
-    "name": "John Smith",
+    "name": "Alice Kershaw",
+    "role": "Head of Digital Transformation",
+    "content": "Your newsletter is one I always read as the insights and articles are always so spot on and useful. It is also one I forward most to other people with the kind of ‘look at this/ we should think about this/ this might resonate’ header. Thank you, fantastic resource."
+  },
+  {
+    "name": "Oliver Vaupel",
+    "role": "Accessibility Specialist",
+    "content": "I bookmark nearly every article you post and try to find the time to read at least the most of them. For me as an accessibility specialist and consultant It’s a huge time saver and helps me to stay up to date with this topic."
+  },
+  {
+    "name": "Josh Kim",
+    "role": "Accessibility Lead",
+    "content": "I wouldn't be the accessibility specialist I am now without your newsletter as someone who sucks at navigating the web to stay up to date with news online. Knowing what's going on is so critical in a space that's so complex and always growing... it takes alot to filter out all the noise and share what's meaningful on a consistent basis. Thanks for being that person. Forever grateful for the work you do to curate this newsletter and how you've improved me (and many others) as an accessibility specialist and an ally."
+  },
+  {
+    "name": "Richard Steinberg",
+    "role": "Senior Accessible User Experience Specialist",
+    "content": "I put together an internal newsletter every week for my company’s employees that includes stories from my own research and sourced from various places including your newsletter. Your newsletter’s stories are very helpful in providing recent tips and opinions for designers, content folks, developers, and more."
+  },
+  {
+    "name": "Nicholas Simson",
     "role": "Designer",
-    "url": "https://example.com/",
-    "content": "An inbox favorite every week."
+    "content": "Since I discovered this newsletter I've been a devoted reader and subscriber. I often find myself bookmarking features shared here and incorporating them into my everyday work. Articles in the New to A11y section are perfect for educating my clients, coworkers, or junior employees."
+  },
+  {
+    "name": "Luke Baldwin",
+    "role": "Team Lead, Front End Design",
+    "content": "Accessibility Weekly provides outstanding tips, tricks, and insights that make accessibility less daunting and, additionally, provides great articles illustrating why accessibility on the internet is SO important. Thank you for continuing to make the internet a better place for all!"
+  },
+  {
+    "name": "Kelicia Christianson",
+    "role": "Designer",
+    "content": "I have learned so much from your newsletter! The curated news and articles are very interesting and I usually end up reading each one. I have forwarded the newsletter to our campus accessibiity group members and others with an interest in accessibility many times! Thanks for the great content and I hope you can continue."
+  },
+  {
+    "name": "Cathy Clary",
+    "role": "Senior Systems Engineer",
+    "content": "I really enjoy your newsletter!!! I love the variety and the fact that you curate articles about so many different accessibility topics and introduce new writers to me. The simple presentation is great too – I can clearly see from the linked text what I’m going to learn and what the source is. Please keep providing this valuable resource."
+  },
+  {
+    "name": "Marc Solomon",
+    "role": "Senior Accessibility Designer",
+    "content": "I’m an avid fan of the Accessibility Weekly newsletter and have been for many years. As an accessibility professional, trying to remain current with the latest news and trends can be a daunting challenge. Accessibility Weekly consistently delivers a curated list of must reads on digital inclusion."
+  },
+  {
+    "name": "Sadik Shahidain",
+    "role": "Software Engineer",
+    "content": "This was one of the first sources of info I found when trying to learn more about web accessibility. It definitely brought up so many 'unknown unknowns' for me then, and continues to be a fruitful source of information for me today."
   }
 ]

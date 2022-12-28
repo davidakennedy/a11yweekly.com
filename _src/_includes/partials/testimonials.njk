@@ -1,4 +1,4 @@
-<h2>What others say</h2>
+<h2>What others say about the newsletter</h2>
 <ol class="testimonial-list auto-grid stack">
 {% for testimonial in testimonials %}
   <li class="testimonial stack">
@@ -6,10 +6,7 @@
       {{ testimonial.content }}
     </div>
     <div class="testimonial-details">
-      <span class="testimonial-name">
-        <a href="{{ testimonial.url }}">
-          {{ testimonial.name }},</span>
-        </a>
+      <span class="testimonial-name">{{ testimonial.name }},</span>
       <span class="testimonial-role">{{ testimonial.role }}</span>
     </div>
   </li>

@@ -220,10 +220,6 @@ body {
   max-width: 400px;
 }
 
-.auto-grid > * + * {
-  margin-top: 1rem;
-}
-
 @supports (display: grid) {
   .auto-grid {
     display: grid;
@@ -231,7 +227,8 @@ body {
       auto-fill,
       minmax(var(--auto-grid-min-size), 1fr)
     );
-    grid-gap: 1rem;
+    grid-gap: 0.714285714286em;
+    grid-gap: var(--s-1);
   }
 
   .auto-grid > * {
@@ -914,28 +911,16 @@ body::after {
 }
 
 .testimonial-list {
-  background-image: repeating-linear-gradient(
-    45deg,
-    #c1c1c1 0,
-    #c1c1c1 1px,
-    transparent 0,
-    transparent 50%
-  );
-  background-image: repeating-linear-gradient(
-    45deg,
-    var(--secondary) 0,
-    var(--secondary) 1px,
-    transparent 0,
-    transparent 50%
-  );
-  background-size: 25px 25px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 0.714285714286em;
+  --stack-space: var(--s-1);
 }
 
 .testimonial {
-  background-color: #f0f0f0;
-  background-color: var(--background);
-  margin: 1.96em 0;
-  margin: var(--s2) 0;
+  border: 1px solid #c1c1c1;
+  border-color: var(--secondary);
   padding: 1.4em;
   padding: var(--s1);
 }
