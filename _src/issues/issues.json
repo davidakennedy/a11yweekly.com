@@ -1,8 +1,6 @@
 {
   "templateClass": "issue-template",
-  "tags": [
-    "issues"
-  ],
-  "permalink": "issue/{{ page.fileSlug | slugify }}/",
+  "tags": ["issues"],
+  "permalink": "/issue/{{ page.fileSlug | slugify }}/",
   "layout": "layouts/issue.njk"
 }

@@ -1,5 +1,5 @@
 ---
-title: What makes a good link?
+title: What Makes a Good Link?
 description: Guidance for what types of content work well in Accessibility Weekly.
 permalink: /good-links/
 ---

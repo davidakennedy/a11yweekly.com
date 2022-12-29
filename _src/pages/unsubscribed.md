@@ -1,7 +1,7 @@
 ---
 title: You Have Been Unsubscribed
 description: You're the best for reading.
-permalink: unsubscribed/index.html
+permalink: /unsubscribed/
 ---
 
 Thank you for reading.
