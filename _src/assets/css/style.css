@@ -844,11 +844,6 @@ body::after {
   max-width: var(--measure);
 }
 
-.issue-list .meta {
-  margin-top: 0.714285714286em;
-  --stack-space: var(--s-1);
-}
-
 /* Issue meta */
 .issue .meta {
   color: #3e3e3e;
@@ -877,7 +872,8 @@ body::after {
   margin-left: auto;
 }
 
-.issue-template .meta {
+.issue-template .meta,
+.issues-template .meta {
   margin-top: 0.0635em;
   margin-top: var(--s-8);
 }
