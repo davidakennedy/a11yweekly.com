@@ -14,4 +14,4 @@ This newsletter started because I believe you make the web accessible. Anyone wh
 
 ## Make a suggestion
 
-Have a suggestion for something I should include in Accessibility Weekly? Email it to <hello@a11yweekly.com>.
+Have a suggestion for something I should include in Accessibility Weekly? Email it to <hello@a11yweekly.com>. [What makes a good link for the newsletter](/good-links/)?
