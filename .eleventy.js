@@ -17,6 +17,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addLayoutAlias("base", "layouts/base.njk");
   eleventyConfig.addLayoutAlias("home", "layouts/home.njk");
   eleventyConfig.addLayoutAlias("page", "layouts/page.njk");
+  eleventyConfig.addLayoutAlias("issues", "layouts/issues.njk");
   eleventyConfig.addLayoutAlias("issue", "layouts/issue.njk");
 
   // Filters
