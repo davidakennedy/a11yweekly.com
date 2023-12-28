@@ -29,8 +29,8 @@
 
 # Redirect feed url
 [[redirects]]
-  from = "/feed"
-  to = "/feed/index.xml"
+  from = "/feed/"
+  to = "/feed/atom.xml"
   status = 200
   force = true
 
