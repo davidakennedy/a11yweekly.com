@@ -5,7 +5,7 @@
   "locale": "en_US",
   "feed": {
     "subtitle": "Delivered to your inbox each Monday, curated by David A. Kennedy.",
-    "filename": "feed.xml",
+    "filename": "atom.xml",
     "path": "/feed/",
     "url": "https://a11yweekly.com/feed/",
     "id": "https://a11yweekly.com/"
