@@ -2,7 +2,6 @@
 title: Welcome to Accessibility Weekly
 description: A weekly newsletter that helps you bring accessibility into your everyday work.
 layout: home
-templateClass: home-template
 permalink: index.html
 ---
 

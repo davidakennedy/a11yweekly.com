@@ -766,8 +766,7 @@ body::after {
   margin-left: auto;
 }
 
-.issue-template .meta,
-.issues-template .meta {
+.meta {
   margin-top: var(--s-8);
 }
 

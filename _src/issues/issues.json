@@ -1,5 +1,4 @@
 {
-  "templateClass": "issue-template",
   "tags": ["issues"],
   "permalink": "/issue/{{ page.fileSlug | slugify }}/",
   "layout": "issue"
