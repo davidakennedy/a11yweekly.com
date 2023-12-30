@@ -3,11 +3,11 @@
   {% include "partials/header.njk" %}
 {% endblock %}
 {% block content %}
-  <div class="page-header stack">
+  <div class="header stack">
     {% set pagetitle = title or renderData.title %}
     <h1 class="title p-name">{{ pagetitle | markdownify }}</h1>
   </div>
-  <div class="page-content stack">
+  <div class="content stack">
     {% include "partials/description.njk" %}
     {% include "partials/signup-form.njk" %}
     {% include "partials/testimonials.njk" %}

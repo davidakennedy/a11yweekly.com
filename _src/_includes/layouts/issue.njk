@@ -4,7 +4,7 @@
 {% endblock %}
 {% block content %}
   <article class="issue h-entry">
-    <div class="issue-header stack">
+    <div class="header stack">
       <h1 class="title p-name">Issue #{{ page.fileSlug }}</h1>
       <div class="meta">
         <span class="issue-num">
@@ -15,7 +15,7 @@
         </span>
       </div>
     </div>
-    <div class="issue-content e-content stack">
+    <div class="content e-content stack">
       {{ content | safe }}
       <h2>Suggestions and corrections</h2>
       {% include "partials/suggestions.njk" %}

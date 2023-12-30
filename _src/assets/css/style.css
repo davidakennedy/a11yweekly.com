@@ -665,62 +665,40 @@ body::after {
   text-align: center;
 }
 
-.page-header > *,
-.issue-header > * {
+.header > * {
   max-width: var(--measure);
 }
 
-.page-header > h1,
-.issue-header > h1 {
+.header > h1 {
   max-width: var(--measure-narrow);
 }
 
-.page-content h2,
-.issue-content h2,
-.page-content h3,
-.issue-content h3,
-.page-content h4,
-.issue-content h4,
-.page-content h5,
-.issue-content h5,
-.page-content h6,
-.issue-content h6 {
+.content h2,
+.content h3,
+.content h4 {
   max-width: var(--measure-narrow);
 }
 
-.page-content > h2 + *,
-.issue-content > h2 + *,
-.page-content > h3 + *,
-.issue-content > h3 + *,
-.page-content > h4 + *,
-.issue-content > h4 + *,
-.page-content > h5 + *,
-.issue-content > h5 + *,
-.page-content > h6 + *,
-.issue-content > h6 + *,
-.page-content > dt + *,
-.issue-content > dt + * {
+.content > h2 + *,
+.content > h3 + *,
+.content > h4 + *,
+.content > dt + * {
   margin-top: var(--s-3);
 }
 
-.page-content p,
-.issue-content p,
-.page-content li,
-.issue-content li,
-.page-content dt,
-.issue-content dt,
-.page-content dd,
-.issue-content dd,
-.page-content .signup-alert,
-.issue-content .signup-alert {
+.content p,
+.content li,
+.content dt,
+.content dd,
+.content .signup-alert {
   max-width: var(--measure);
 }
 
-.page-content {
+.content {
   margin-top: var(--s-3);
 }
 
-.issue-content {
+.issue .content {
   margin-top: var(--s1);
 }
 
