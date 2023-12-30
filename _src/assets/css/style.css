@@ -108,14 +108,10 @@ select {
     Consolas, "DejaVu Sans Mono", monospace;
   background-color: var(--background);
   color: var(--text);
+  font-size: 1.25rem;
   font-family: var(--font-sans-serif);
   font-weight: 400;
   line-height: var(--line-height);
-}
-
-/* Global */
-body {
-  font-size: 1.25rem;
 }
 
 /* Utilities */
@@ -150,7 +146,7 @@ body {
 }
 
 .intro {
-  font-size: 1.334rem;
+  font-size: 1.1rem;
 }
 
 /* Stack abstraction.
@@ -216,34 +212,33 @@ h5,
 h6 {
   clear: both;
   font-weight: 700;
-  hyphens: auto;
   line-height: 1.2;
   line-height: var(--line-height-small);
   word-wrap: break-word;
 }
 
 h1 {
-  font-size: 1.845rem;
+  font-size: 1.476rem;
 }
 
 h2 {
-  font-size: 1.729rem;
+  font-size: 1.383rem;
 }
 
 h3 {
-  font-size: 1.62rem;
+  font-size: 1.296rem;
 }
 
 h4 {
-  font-size: 1.518rem;
+  font-size: 1.215rem;
 }
 
 h5 {
-  font-size: 1.423rem;
+  font-size: 1.138rem;
 }
 
 h6 {
-  font-size: 1.334rem;
+  font-size: 1.067rem;
 }
 
 dfn,
@@ -278,7 +273,7 @@ pre {
   background-color: var(--secondary);
   color: var(--text);
   font-family: var(--font-monospace);
-  font-size: 1.172rem;
+  font-size: 0.9rem;
   line-height: var(--line-height-small);
   max-width: 100%;
   overflow: auto;
@@ -291,7 +286,7 @@ kbd,
 var {
   background-color: var(--secondary);
   font-family: var(--font-monospace);
-  font-size: 1.172rem;
+  font-size: 0.9rem;
 }
 
 abbr {
@@ -327,7 +322,7 @@ q:after {
 }
 
 small {
-  font-size: 1.098rem;
+  font-size: 0.8rem;
 }
 
 table,
@@ -542,7 +537,7 @@ table {
 }
 
 figcaption {
-  font-size: 1.172rem;
+  font-size: 0.9rem;
 }
 
 img {
@@ -570,7 +565,7 @@ img {
 
 /* Post Navigation */
 .issue-pagination a {
-  font-size: 1.172rem;
+  font-size: 0.9rem;
   font-weight: 700;
   text-decoration: none;
 }
@@ -607,7 +602,7 @@ a:active {
 }
 
 .skip-link {
-  font-size: 1.172rem;
+  font-size: 0.9rem;
   font-weight: 700;
   left: var(--s2);
   max-width: none;
@@ -663,7 +658,7 @@ body::after {
 
 .inner-wrapper {
   margin: 0 auto;
-  max-width: 75rem;
+  max-width: 60rem;
   padding: var(--s3) var(--s0);
 }
 
@@ -754,7 +749,7 @@ body::after {
 /* Issue meta */
 .issue .meta {
   color: var(--lighttext);
-  font-size: 1.172rem;
+  font-size: 0.9rem;
   font-style: italic;
 }
 
