@@ -15,13 +15,9 @@
   </a>
   <nav class="site-navigation" aria-label="Site">
     <ul class="nav">
-      {%- for nav in collections.nav -%}
-      <li class="nav-item{% if nav.url == page.url %} nav-item-active{% endif %}">
-        <a href="{{ nav.url | url }}">
-          {{ nav.data.navtitle }}
-        </a>
-      </li>
-      {%- endfor -%}
+      {%- for entry in collections.all | eleventyNavigation %}
+        <li class="nav-item{% if entry.url == page.url %} nav-item-active{% endif %}"><a {% if entry.url == page.url %}aria-current="page"{% endif %} href="{{ entry.url | url }}">{{ entry.title }}</a></li>
+      {%- endfor %}
     </ul>
   </nav>
 </div>

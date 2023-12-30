@@ -1,10 +1,8 @@
 ---
 title: Archive
 description: Past issues of the Accessibility Weekly newsletter.
-tags:
-  - nav
-navtitle: Archive
-navorder: 1
+eleventyNavigation:
+  key: Archive
 pagination:
   data: collections.issues
   size: 10
