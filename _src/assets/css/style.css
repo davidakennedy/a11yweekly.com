@@ -156,11 +156,6 @@ select {
   margin-top: var(--stack-space, 1.4em);
 }
 
-.stack + .stack,
-.stack > .stack {
-  margin-top: var(--stack-space, 1.4em);
-}
-
 /* Horizontal navigation abstraction. */
 .nav {
   display: flex;
@@ -721,6 +716,14 @@ body::after {
   max-width: var(--measure);
 }
 
+.page-content {
+  margin-top: var(--s-3);
+}
+
+.issue-content {
+  margin-top: var(--s1);
+}
+
 /* Issues */
 .issue-list {
   list-style: none;
@@ -728,8 +731,7 @@ body::after {
   padding: 0;
 }
 
-.issue-list .stack + .stack,
-.issue-list .stack > .stack {
+.issue-list .issue {
   margin-top: var(--s3);
 }
 
@@ -773,7 +775,6 @@ body::after {
   list-style: none;
   margin: 0;
   padding: 0;
-  --stack-space: var(--s-1);
 }
 
 .testimonial {
