@@ -3,7 +3,7 @@
   {% include "partials/header.njk" %}
 {% endblock %}
 {% block content %}
-  <section class="page">
+  <div class="page">
     <div class="header stack">
       {% set pagetitle = title or renderData.title %}
       <h1 class="title p-name">{{ pagetitle | markdownify }}</h1>
@@ -11,7 +11,7 @@
     <div class="content stack">
       {{ content | safe }}
     </div>
-  </section>
+  </div>
 {% endblock %}
 {% block footer %}
   {% include "partials/footer.njk" %}

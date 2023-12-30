@@ -3,16 +3,18 @@
     {% include "partials/header.njk" %}
   {% endblock %}
 {% block content %}
-  <div class="header stack">
-    {% set pagetitle = title or renderData.title %}
-    <h1 class="title p-name">{{ pagetitle | markdownify }}</h1>
+  <div class="archive">
+    <div class="header stack">
+      {% set pagetitle = title or renderData.title %}
+      <h1 class="title p-name">{{ pagetitle | markdownify }}</h1>
+    </div>
+    <div class="content stack">
+      {{ content | safe }}
+      {% set issuelist = pagination.items %}
+      {% include "partials/issue-list.njk" %}
+    </div>
+    {% include "partials/pagination.njk" %}
   </div>
-  <div class="content stack">
-    {{ content | safe }}
-    {% set issuelist = pagination.items %}
-    {% include "partials/issue-list.njk" %}
-  </div>
-  {% include "partials/pagination.njk" %}
 {% endblock %}
 {% block footer %}
     {% include "partials/footer.njk" %}
