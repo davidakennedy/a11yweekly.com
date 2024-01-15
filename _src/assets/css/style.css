@@ -257,7 +257,6 @@ strong {
 }
 
 pre {
-  background-color: var(--secondary);
   color: var(--text);
   font-family: var(--font-monospace);
   font-size: 0.9rem;
@@ -271,7 +270,6 @@ pre {
 code,
 kbd,
 var {
-  background-color: var(--secondary);
   font-family: var(--font-monospace);
   font-size: 0.9rem;
 }
