@@ -49,6 +49,11 @@ Price:
 - for six months: $420
 - for the whole year: $900
 
+## Reserved spots
+
+**Top Ad**: Booked for all of June, 2024.
+**Classified Ad**: None booked for 2024.
+
 ## Past sponsors
 
 A few past sponsors:
