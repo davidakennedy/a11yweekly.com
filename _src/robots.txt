@@ -1,4 +1,4 @@
 User-agent: *
+Disallow: /guest-curator-guidelines/
 Allow: /
-
 Sitemap: http://a11yweekly.com/sitemap.xml
