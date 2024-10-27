@@ -505,6 +505,10 @@ li > ol {
   margin-left: var(--s1);
 }
 
+.issue li {
+  margin-bottom: var(--s0);
+}
+
 dt {
   border-bottom: 0.085em solid var(--lighttext);
   font-weight: 700;
