@@ -478,9 +478,7 @@ label + .inline-field-control {
 
 /* Formatting */
 hr {
-  color: var(--lighttext);
-  height: var(--s-12);
-  margin-top: 0;
+  border: var(--s-8) solid var(--secondary);
 }
 
 ul,
@@ -692,6 +690,7 @@ body::after {
 .content li,
 .content dt,
 .content dd,
+.content hr,
 .content .signup-alert {
   max-width: var(--measure);
 }
