@@ -27,11 +27,11 @@ What you get:
 
 Price:
 
-- per issue: $50
-- for one month: $175
-- for four months: $500
-- for six months: $850
-- for the whole year: $1400
+- per issue: $75
+- for one month: $200
+- for four months: $600
+- for six months: $900
+- for the whole year: $1700
 
 ### Classified Ad
 
@@ -43,16 +43,16 @@ What you get:
 
 Price:
 
-- per issue: $20
-- for one month: $60
-- for four months: $280
-- for six months: $420
-- for the whole year: $900
+- per issue: $25
+- for one month: $75
+- for four months: $300
+- for six months: $500
+- for the whole year: $1000
 
 ## Reserved spots
 
 **Top Ad**: Booked through mid-October, 2026.
-**Classified Ad**: Three of three slots booked through October 2025.
+**Classified Ad**: Three of three slots available.
 
 ## Past sponsors
 
