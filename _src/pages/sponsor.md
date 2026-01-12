@@ -51,8 +51,13 @@ Price:
 
 ## Reserved spots
 
-**Top Ad**: Booked through mid-October, 2026.
-**Classified Ad**: Three of three slots available.
+**Top Ad**: Booked through mid-October, 2027.
+
+**Classified Ad**:
+
+- Slot 1: Booked through January 11, 2027
+- Slot 2: Booked through October 12, 2026
+- Slot 3: Booked through July 13, 2026
 
 ## Past sponsors
 
