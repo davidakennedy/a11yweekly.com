@@ -11,9 +11,14 @@ A good link:
 - **is current**. I prefer content published within the last two months, if possible. Older content with timeless information can be useful for the "New to A11y (Accessibility)" section.
 - **is accurate**. Accessibility comes with enough nuance already since many of the answers are "It depends." The information should be as correct as possible.
 - **provides a perspective**. Good writing tells a story and has a point of view. The best links aren't just tutorials with the facts, but contain details about how you came to learn those facts and how it changed you or your organization.
+- **helps people learn about digital accessibility**. I created the newsletter to promote learning about accessibility. The better a link does this, the more chance it has to make it in.
+- **features the lived experience of people with disabilities**. I try to elevate the work and experiences of people with disabilities whenever I can. It's the best way for accessibility practitioners to think critically about how those with disabilities participate in accessibility work.
 - **isn't behind a paywall or email sign-up form**. You can build your customer base or email list another way. I also avoid links with strong call to actions at the end, directing people to paid products. The newsletter sometimes links to industry products with substantial new features that have a free version or tier.
 - **isn't a job listing**. Job links expire, making it hard to know when that happens. Job boards like [A11y Jobs](https://www.a11yjobs.com) provide a better venue than a newsletter.
 - **doesn't promote accessibility overlays**. [What's an overlay](https://overlayfactsheet.com/#what-is-a-web-accessibility-overlay)? Overlays don't solve an accessibility problem and make the experience worse for disabled people. I don't recommend them ([many in the industry don't](https://shouldiuseanaccessibilityoverlay.com)), and won't promote them or any work by an overlay company.
 - **is hosted on a domain that isn't owned by a social media company**. I'll occasionally link to social media posts if it's newsworthy. However, I try to avoid it since these sites tend to break links, go out of business, etc. over time. I want to link to content that has a better chance of lasting. Related note: I avoid linking to Medium.com posts now since many aren't readable without an account.
+- **isn't a link to an app in an app store**. Linking to apps implies an endorsement in many ways. I don't have the time to test apps, nor am I often the primary audience. Instead, write a blog post or create a video/talk about the why behind the app and/or how it took an inclusive approach to its design.
+
+A good link doesn't have to hit all of these points, of course, but it's a good start.
 
 Lastly, Accessibility Weekly doesn't participate in link exchanges, guest posts or the purchase of email lists.
