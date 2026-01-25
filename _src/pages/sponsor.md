@@ -57,7 +57,7 @@ Price:
 
 - Slot 1: Booked through January 11, 2027
 - Slot 2: Booked through October 12, 2026
-- Slot 3: Booked through July 13, 2026
+- Slot 3: Booked through December 28, 2026
 
 ## Past sponsors
 
