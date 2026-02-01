@@ -10,7 +10,7 @@ Promote your product or service to an audience with a deep interest in digital a
 
 The newsletter goes out Monday mornings at 8 a.m. ET, but can get delayed by a day at times. On average over eight years of the newsletter, 45 issues have gone out each year. In recent years, that number has ticked up.
 
-Currently, it has 10,498 subscribers. No tracking exist in the newsletter. [Read more about the reasons behind removing tracking](https://davidakennedy.com/blog/accessibility-weekly-and-tracking/).
+Currently, it has 11,370 subscribers. No tracking exist in the newsletter. [Read more about the reasons behind removing tracking](https://davidakennedy.com/blog/accessibility-weekly-and-tracking/).
 
 ## Types of Ads
 
