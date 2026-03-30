@@ -56,7 +56,7 @@ Price:
 **Classified Ad**:
 
 - Slot 1: Booked through January 11, 2027
-- Slot 2: Booked through October 12, 2026
+- Slot 2: Booked through November 9, 2026; December 7 - 14, 2026
 - Slot 3: Booked through December 28, 2026
 
 ## Past sponsors
